@@ -4,7 +4,11 @@ import Cart from '../src/sections/cart'
 
 const IndexPage = (): React.ReactNode => (
   <Container maxWidth="container.xl" padding={0}>
-    <Flex h="100vh" py={20}>
+    <Flex
+      h={{ base: 'auto', md: '100vh' }}
+      py={[0, 10, 20]}
+      direction={{ base: 'column-reverse', md: 'row' }}
+    >
       <Details />
       <Cart />
     </Flex>
