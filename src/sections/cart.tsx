@@ -15,6 +15,7 @@ import {
 const Cart = () => {
   const { toggleColorMode } = useColorMode()
   const bgColor = useColorModeValue('gray.50', 'whiteAlpha.50')
+  const secondaryTextValue = useColorModeValue('gray.600', 'gray.400')
 
   return (
     <VStack
@@ -47,7 +48,7 @@ const Cart = () => {
         >
           <VStack w="full" spacing={0} alignItems="flex-start">
             <Heading size="md">Penny board</Heading>
-            <Text color="gray.600">PNYCOMP27541</Text>
+            <Text color={secondaryTextValue}>PNYCOMP27541</Text>
           </VStack>
           <Heading size="sm" textAlign="end">
             $119.00
@@ -56,21 +57,21 @@ const Cart = () => {
       </HStack>
       <VStack spacing={4} alignItems="stretch" w="full">
         <HStack justifyContent="space-between">
-          <Text color="gray.600">Subtotal</Text>
+          <Text color={secondaryTextValue}>Subtotal</Text>
           <Heading size="sm">$119.00</Heading>
         </HStack>
         <HStack justifyContent="space-between">
-          <Text color="gray.600">Shipping</Text>
+          <Text color={secondaryTextValue}>Shipping</Text>
           <Heading size="sm">$19.99</Heading>
         </HStack>
         <HStack justifyContent="space-between">
-          <Text color="gray.600">Taxes (estimated)</Text>
+          <Text color={secondaryTextValue}>Taxes (estimated)</Text>
           <Heading size="sm">$23.80</Heading>
         </HStack>
       </VStack>
       <Divider />
       <HStack justifyContent="space-between" w="full">
-        <Text color="gray.600">Total</Text>
+        <Text color={secondaryTextValue}>Total</Text>
         <Heading size="lg">$162.79</Heading>
       </HStack>
     </VStack>
