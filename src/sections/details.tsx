@@ -63,7 +63,7 @@ const Details = (): JSX.Element => {
           <Checkbox>Ship to Billing Address</Checkbox>
         </GridItem>
         <GridItem colSpan={2}>
-          <Button colorScheme="brand" size="lg" w="full">
+          <Button variant="primary" size="lg" w="full">
             Place Order
           </Button>
         </GridItem>
